@@ -7,11 +7,15 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
+    <!--当前应用信息，name是当前应用的名称，用于注册中心计算依赖关系，消费方和提供方的名称不要一样-->
     <dubbo:application name="dubbo-provider" />
+    <!--注册中心配置，protocol注册中心的地址协议，address注册中心服务器地址-->
     <dubbo:registry  protocol="zookeeper" address="127.0.0.1:2181" />
+    <!--服务提供者协议配置，name协议名称，port端口-->
     <dubbo:protocol name="dubbo" port="20880" />
 
     <bean id="helloService" class="dubbo.provider.hello.service.impl.HelloServiceImpl" />
+    <!--服务提供者暴露服务配置，interface接口名，ref服务对象实现引用-->
     <dubbo:service interface="dubbo.common.hello.service.HelloService" ref="helloService" />
 
 
