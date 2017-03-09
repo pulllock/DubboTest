@@ -16,9 +16,9 @@
 
     <bean id="helloService" class="dubbo.provider.hello.service.impl.HelloServiceImpl" />
     <!--服务提供者暴露服务配置，interface接口名，ref服务对象实现引用-->
-    <dubbo:service interface="dubbo.common.hello.service.HelloService" ref="helloService" />
+    <dubbo:service interface="dubbo.common.hello.service.HelloService" ref="helloService"/>
 
-    <bean id="eventService" class="dubbo.provider.hello.service.impl.EventServiceImpl"/>
-    <dubbo:service interface="dubbo.common.hello.service.EventService" ref="eventService"/>
+<!--    <bean id="eventService" class="dubbo.provider.hello.service.impl.EventServiceImpl"/>
+    <dubbo:service interface="dubbo.common.hello.service.EventService" ref="eventService"/>-->
 
 </beans>
