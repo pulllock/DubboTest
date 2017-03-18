@@ -13,6 +13,6 @@
     <dubbo:registry  protocol="zookeeper" address="127.0.0.1:2181" />
 
     <!--服务消费者引用服务配置，id服务引用Bean id，interface服务接口名-->
-    <dubbo:reference id="helloService" interface="dubbo.common.hello.service.HelloService" />
+    <dubbo:reference id="helloService" interface="dubbo.common.hello.service.HelloService"  timeout="100000"/>
 
 </beans>
