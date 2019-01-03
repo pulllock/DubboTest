@@ -2,7 +2,7 @@ package me.cxis.dubbo.result;
 
 import java.io.Serializable;
 
-public class CallResult<T> implements Serializable {
+public class CallResult<T extends Serializable> implements Serializable {
 
     private static final long serialVersionUID = -4674588112953085403L;
 
