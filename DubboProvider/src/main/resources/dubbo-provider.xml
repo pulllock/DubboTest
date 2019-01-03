@@ -21,4 +21,7 @@
 <!--    <bean id="eventService" class="dubbo.provider.hello.service.impl.EventServiceImpl"/>
     <dubbo:service interface="dubbo.common.hello.service.EventService" ref="eventService"/>-->
 
+    <bean id="userService" class="me.cxis.dubbo.service.impl.UserServiceImpl"/>
+    <dubbo:service interface="me.cxis.dubbo.service.UserService" ref="userService"/>
+
 </beans>
