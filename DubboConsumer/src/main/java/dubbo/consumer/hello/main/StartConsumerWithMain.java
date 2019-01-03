@@ -1,6 +1,9 @@
 package dubbo.consumer.hello.main;
 
 import dubbo.common.hello.service.HelloService;
+import me.cxis.dubbo.model.UserDTO;
+import me.cxis.dubbo.result.CallResult;
+import me.cxis.dubbo.service.UserService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
@@ -16,6 +19,10 @@ public class StartConsumerWithMain {
         HelloService helloService = (HelloService) applicationContext.getBean("helloService");
         System.out.println("获取完bean");
         helloService.sayHello();
+
+        UserService userService = (UserService) applicationContext.getBean("userService");
+        CallResult<UserDTO> callResult = userService.getUserById(1);
+        System.out.println(callResult);
 
         System.out.println("按任意键退出");
         try {
