@@ -1,11 +1,11 @@
-package dubbo.provider.hello.main;
+package me.cxis.dubbo;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import com.alibaba.dubbo.config.ServiceConfig;
-import dubbo.common.hello.service.HelloService;
-import dubbo.provider.hello.service.impl.HelloServiceImpl;
+import me.cxis.dubbo.service.HelloService;
+import me.cxis.dubbo.service.impl.HelloServiceImpl;
 
 /**
  * Created by cheng.xi on 2017-03-06 09:11.

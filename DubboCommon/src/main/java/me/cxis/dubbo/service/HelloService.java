@@ -1,4 +1,4 @@
-package dubbo.common.hello.service;
+package me.cxis.dubbo.service;
 
 /**
  * Created by cheng.xi on 15/4/12.

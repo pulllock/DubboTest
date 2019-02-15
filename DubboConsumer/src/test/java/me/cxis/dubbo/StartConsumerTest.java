@@ -1,6 +1,6 @@
-package dubbo.consumer.hello.main;
+package me.cxis.dubbo;
 
-import dubbo.common.hello.service.HelloService;
+import me.cxis.dubbo.service.HelloService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/dubbo-consumer.xml")
-public class StartConsumer {
+public class StartConsumerTest {
 
     @Autowired
     private HelloService helloService;

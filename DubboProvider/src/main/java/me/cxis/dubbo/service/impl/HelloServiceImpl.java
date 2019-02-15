@@ -1,10 +1,8 @@
-package dubbo.provider.hello.service.impl;
+package me.cxis.dubbo.service.impl;
 
 import com.alibaba.dubbo.common.extension.ExtensionLoader;
 import com.alibaba.dubbo.rpc.Protocol;
-import dubbo.common.hello.service.HelloService;
-import org.springframework.context.ApplicationListener;
-import org.springframework.context.event.ContextRefreshedEvent;
+import me.cxis.dubbo.service.HelloService;
 
 /**
  * Created by cmcc on 15/4/12.

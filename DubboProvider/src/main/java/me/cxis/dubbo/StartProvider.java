@@ -1,13 +1,16 @@
-package dubbo.provider.hello.main;
+package me.cxis.dubbo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 
 /**
- * Created by cheng.xi on 15/4/12.
+ *
+ * @author cheng.xi
+ * @date 15/4/12
  */
 public class StartProvider {
+
     public static void main(String[] args){
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"dubbo-provider.xml"});
         context.start();
