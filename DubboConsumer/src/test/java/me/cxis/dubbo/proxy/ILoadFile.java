@@ -1,4 +1,4 @@
-package me.cxis.test.proxy;
+package me.cxis.dubbo.proxy;
 
 /**
  * Created by cheng.xi on 2017-03-14 10:25.

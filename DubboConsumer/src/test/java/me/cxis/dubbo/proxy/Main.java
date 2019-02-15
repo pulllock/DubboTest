@@ -1,4 +1,4 @@
-package me.cxis.test.proxy;
+package me.cxis.dubbo.proxy;
 
 import java.lang.reflect.Proxy;
 

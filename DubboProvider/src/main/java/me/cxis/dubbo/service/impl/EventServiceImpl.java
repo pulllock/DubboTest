@@ -1,6 +1,6 @@
 /*package dubbo.provider.hello.service.impl;
 
-import dubbo.common.hello.service.EventService;
+import me.cxis.dubbo.service.EventService;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 
