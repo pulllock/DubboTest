@@ -18,4 +18,5 @@
 
     <dubbo:reference id="userService" interface="me.cxis.dubbo.service.UserService" timeout="5000"/>
 
+    <bean id="genericDubbo" class="me.cxis.dubbo.generic.GenericDubbo"/>
 </beans>
