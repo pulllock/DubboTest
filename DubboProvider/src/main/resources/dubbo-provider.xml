@@ -8,7 +8,7 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!--当前应用信息，name是当前应用的名称，用于注册中心计算依赖关系，消费方和提供方的名称不要一样-->
-    <dubbo:application name="dubbo-provider" version="1.0" owner="cheng.xi" organization="china" environment="product" />
+    <dubbo:application name="dubbo-provider" version="1.0" owner="Pullock" organization="china" environment="product" />
 
     <!--注册中心配置，protocol注册中心的地址协议，address注册中心服务器地址-->
     <dubbo:registry  protocol="zookeeper" address="127.0.0.1:2181" />
@@ -16,14 +16,14 @@
     <!--服务提供者协议配置，name协议名称，port端口-->
     <dubbo:protocol name="dubbo" port="20880" />
 
-    <bean id="helloService" class="me.cxis.dubbo.service.impl.HelloServiceImpl" />
+    <bean id="helloService" class="fun.pullock.dubbo.service.impl.HelloServiceImpl" />
     <!--服务提供者暴露服务配置，interface接口名，ref服务对象实现引用-->
-    <dubbo:service interface="me.cxis.dubbo.service.HelloService" ref="helloService"/>
+    <dubbo:service interface="fun.pullock.dubbo.service.HelloService" ref="helloService"/>
 
 <!--    <bean id="eventService" class="dubbo.provider.hello.service.impl.EventServiceImpl"/>
-    <dubbo:service interface="me.cxis.dubbo.service.EventService" ref="eventService"/>-->
+    <dubbo:service interface="service.dubbo.fun.pullock.EventService" ref="eventService"/>-->
 
-    <bean id="userService" class="me.cxis.dubbo.service.impl.UserServiceImpl"/>
-    <dubbo:service interface="me.cxis.dubbo.service.UserService" ref="userService"/>
+    <bean id="userService" class="fun.pullock.dubbo.service.impl.UserServiceImpl"/>
+    <dubbo:service interface="fun.pullock.dubbo.service.UserService" ref="userService"/>
 
 </beans>

@@ -1,2 +1,2 @@
-optimusPrime=me.cxis.dubbo.spi.OptimusPrime
-bumblebee=me.cxis.dubbo.spi.Bumblebee
+optimusPrime=spi.dubbo.fun.pullock.OptimusPrime
+bumblebee=spi.dubbo.fun.pullock.Bumblebee

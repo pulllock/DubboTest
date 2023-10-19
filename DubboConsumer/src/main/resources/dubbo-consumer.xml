@@ -14,9 +14,9 @@
     <dubbo:registry  protocol="zookeeper" address="127.0.0.1:2181" />
 
     <!--服务消费者引用服务配置，id服务引用Bean id，interface服务接口名-->
-    <dubbo:reference id="helloService" interface="me.cxis.dubbo.service.HelloService" timeout="100000"/>
+    <dubbo:reference id="helloService" interface="fun.pullock.dubbo.service.HelloService" timeout="100000"/>
 
-    <dubbo:reference id="userService" interface="me.cxis.dubbo.service.UserService" timeout="5000"/>
+    <dubbo:reference id="userService" interface="fun.pullock.dubbo.service.UserService" timeout="5000"/>
 
-    <bean id="genericDubbo" class="me.cxis.dubbo.generic.GenericDubbo"/>
+    <bean id="genericDubbo" class="fun.pullock.dubbo.generic.GenericDubbo"/>
 </beans>
